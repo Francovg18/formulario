@@ -1,0 +1,17 @@
+.cajita {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+  font-size: 30px;
+  font-family: cursive;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 25px;
+}
+.boton {
+  margin: 10px;
+  padding: 7px;
+}

@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive; /* Usa fuente global */
+  background-size: cover;
+  color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: rgb(122, 126, 73); /* Mantén el color del contenedor */
+  font-family: "Itim", cursive; /* Personalización específica */
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(15px);
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0); /* Solo borde inferior */
+  background: transparent;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgb(46, 46, 46);
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.submit-button {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  background: #1d4ed8;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 18px;
+}
+
+.submit-button:hover {
+  background: #1e40af;
+}
+
+.submit-button.disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
